@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Paralysed
+namespace Paralysed.Character
 {
     public class Bullet : MonoBehaviour
     {
@@ -29,7 +29,6 @@ namespace Paralysed
         }
 
         private void OnCollisionEnter2D(Collision2D other)
-
         {
             BulletEffect(other);
 
@@ -42,12 +41,11 @@ namespace Paralysed
                 hasHit = true;
                 rb.velocity = Vector2.zero;
                 rb.isKinematic = true;
+                Camera.CameraController.Instance.CameraShake(0.2f,2f);
                 Destroy(gameObject);
 
-             }
+            }
         }
-
     }
-
 }
 

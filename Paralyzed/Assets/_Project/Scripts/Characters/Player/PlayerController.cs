@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Paralysed
+namespace Paralysed.Character
 {
-    public class _PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         private Rigidbody2D _rb;
        

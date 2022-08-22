@@ -2,31 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-using System;
+using Paralysed.Core;
 
-namespace Paralysed
+namespace Paralysed.Camera
 {
-    public class CameraController : MonoBehaviour
+    public class CameraController : MonoSingletonGeneric<CameraController>
     {
-        public CinemachineVirtualCamera virtualCamera;
+		[SerializeField] private CinemachineVirtualCamera virtualCamera;
         private CinemachineBasicMultiChannelPerlin noise;
 
-        public void SetPlayer(Transform player)
+		private void Start()
+		{
+            noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();	
+		}
+
+        public void CameraShake(float interval, float amplitude)
         {
-            virtualCamera.Follow = player;
-            virtualCamera.LookAt = player;
-            noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            StartCoroutine(StartCameraShake(interval, amplitude));
         }
 
-        public void CameraShake()
+        IEnumerator StartCameraShake(float interval, float amplitude)
         {
-            StartCoroutine(StartCameraShake());
-        }
-
-        IEnumerator StartCameraShake()
-        {
-            noise.m_AmplitudeGain = 1.3f;
-            yield return new WaitForSeconds(0.2f);
+            noise.m_AmplitudeGain = amplitude;
+            yield return new WaitForSeconds(interval);
             noise.m_AmplitudeGain = 0;
         }
 

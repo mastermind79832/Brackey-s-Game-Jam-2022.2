@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-namespace Paralysed
+namespace Paralysed.Character
 {
     public class Turret_Controller : MonoBehaviour
     {
         public GameObject Bullet;
         public float launchForce;
-        public Transform shotPoint;
-        
+        public Transform shotPoint; 
 
         //points
         public GameObject point;
@@ -30,13 +30,12 @@ namespace Paralysed
         void Update()
         {
             Vector2 gunPosition = transform.position;
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePosition = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = mousePosition - gunPosition;
             transform.up = direction;
 
             if (Input.GetMouseButtonDown(0) )
             {
-               
                 Shoot();
             }
 

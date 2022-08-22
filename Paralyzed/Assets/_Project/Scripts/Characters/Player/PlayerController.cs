@@ -6,60 +6,57 @@ namespace Paralysed.Character
 {
     public class PlayerController : MonoBehaviour
     {
-        private Rigidbody2D _rb;
-       
-        public float _CheckRadiius;
-        public Transform _GroundCheck;
+		[Header("Componenet")]
+        [SerializeField] private Rigidbody2D m_Rigidbody;
 
-        public float _jumpForce;
-        private float _jumpTimeCounter;
-        public float _jumpTime;
+		[Header("Ground Check")]
+        [SerializeField] private float m_CheckRadius;
+        [SerializeField] private Transform m_GroundCheck;
+        private bool b_IsGrounded;
 
-        private bool _isGrounded;
-        private bool _isJumping;
+		[Header("Jump Properties")]
+        [SerializeField] private float m_JumpForce;
+        [SerializeField] private float m_JumpTime;
+        private float m_JumpTimeCounter;
+        private bool b_IsJumping;
 
+		[Header("Ground Collider layer")]
+        [SerializeField] private LayerMask m_WhatIsGround;
 
-        public LayerMask _whatIsGround;
-
-        private void Start()
+		private void Update()
         {
-            _rb = GetComponent<Rigidbody2D>();
+            GetInput();
         }
 
-        private void Update()
-        {
-            Jump();
-        }
+        private void GetInput()
+		{
+			CheckGround();
 
-        private void Jump()
-        {
-            _isGrounded = Physics2D.OverlapCircle(_GroundCheck.position, _CheckRadiius, _whatIsGround);
+			if (Input.GetMouseButtonDown(1) && b_IsGrounded)
+			{
+				b_IsJumping = true;
+				m_JumpTimeCounter = m_JumpTime;
+				Jump();
+			}
+			if (Input.GetMouseButton(1) && b_IsJumping)
+			{
+				if (m_JumpTimeCounter > 0)
+				{
+					Jump();
+					DecreaseJumpTimer();
+				}
+				else
+					b_IsJumping = false;
+			}
+			if (Input.GetMouseButtonUp(1) && !b_IsGrounded)
+			{
+				b_IsJumping = false;
+			}
+		}
 
-            if(_isGrounded == true && Input.GetMouseButtonDown(1))
-            {
-                _isJumping = true;
-                _jumpTimeCounter = _jumpTime;
-                _rb.velocity = Vector2.up * _jumpForce;
-            }
-            if(Input.GetMouseButton(1) && _isJumping == true)
-            {
-                if(_jumpTimeCounter > 0)
-                {
-                    _rb.velocity = Vector2.up * _jumpForce;
-                    _jumpTimeCounter -= Time.deltaTime;
-                }
-                else
-                {
-                    _isJumping = false;
-                }
-               
-            }
-            if(Input.GetMouseButtonUp(1) && _isGrounded == false)
-            {
-                _isJumping = false;
-                
-            }
-        }
-
-    }
+		private void DecreaseJumpTimer() =>	m_JumpTimeCounter -= Time.deltaTime;
+		private void Jump() => m_Rigidbody.velocity = Vector2.up * m_JumpForce;
+		private void CheckGround() => b_IsGrounded = Physics2D.OverlapCircle(m_GroundCheck.position, m_CheckRadius, m_WhatIsGround);
+		
+	}
 }

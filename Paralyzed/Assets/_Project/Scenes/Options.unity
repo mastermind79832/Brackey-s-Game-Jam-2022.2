@@ -708,11 +708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eaa371b73e338840a22fe3bdbc33449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _CheckRadiius: 0.3
-  _GroundCheck: {fileID: 1276024486}
-  _jumpForce: 8
-  _jumpTime: 0.35
-  _whatIsGround:
+  m_Rigidbody: {fileID: 1293850201}
+  m_CheckRadius: 0.2
+  m_GroundCheck: {fileID: 1276024486}
+  m_JumpForce: 8
+  m_JumpTime: 0.3
+  m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1758132459
@@ -951,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7a46b32698c8f4ab808818bf1ef85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 983462548}
+  Target: {fileID: 983462549}
   speed: 3
 --- !u!1 &2002385250
 GameObject:

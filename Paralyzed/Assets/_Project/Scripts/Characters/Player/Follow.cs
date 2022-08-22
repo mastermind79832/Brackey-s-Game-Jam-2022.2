@@ -6,24 +6,23 @@ namespace Paralysed.Character
 {
     public class Follow : MonoBehaviour
     {
-        public GameObject objectToFollow;
-        public float speed = 2.0f;
+        [SerializeField] private Transform target;
+        [SerializeField] private float m_Speed = 2.0f;
 
-        void Update()
+        private float interpolation;
+
+        void LateUpdate()
         {
-            float interpolation = speed * Time.deltaTime;
-
+            interpolation = m_Speed * Time.deltaTime;
             GunFollowTheReference(interpolation);
-
         }
         private void GunFollowTheReference(float interpolation)
         {
-            Vector3 position = this.transform.position;
-            position.y = Mathf.Lerp(this.transform.position.y, objectToFollow.transform.position.y, interpolation);
-            position.x = Mathf.Lerp(this.transform.position.x, objectToFollow.transform.position.x, interpolation);
+            Vector3 position = transform.position;
+            position.y = Mathf.Lerp(transform.position.y, target.position.y, interpolation);
+            position.x = Mathf.Lerp(transform.position.x, target.position.x, interpolation);
 
-
-            this.transform.position = position;
+            transform.position = position;
         }
     }
 }

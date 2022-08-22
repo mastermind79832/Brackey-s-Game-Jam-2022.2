@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Paralysed.Obstacle
 {
-    public class MazeObstacle : Obstacle
+    public class MaceObstacle : Obstacle
     {
 		[Tooltip("This object will move from one way point to the other and then cycle back again")]
         [SerializeField] private Transform[] m_WayPoints;

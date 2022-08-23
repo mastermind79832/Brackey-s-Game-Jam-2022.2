@@ -152,7 +152,6 @@ MonoBehaviour:
   m_WayPoints:
   - {fileID: 8165802774628277665}
   - {fileID: 8165802774424985732}
-  - {fileID: 0}
   m_Speed: 5
 --- !u!1 &8165802774424985733
 GameObject:

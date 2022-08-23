@@ -156,7 +156,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0067284107, y: -0.0071437955}
   m_SpriteTilingProperty:
-    border: {x: 0.089999996, y: 0.089999996, z: 0.099999994, w: 0.089999996}
+    border: {x: 0.099999994, y: 0.089999996, z: 0.099999994, w: 0.089999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2.01}
     newSize: {x: 14.869956, y: 2.01}
@@ -314,7 +314,7 @@ GameObject:
   m_Layer: 0
   m_Name: ShootPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -326,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243387242}
   m_LocalRotation: {x: -0, y: -0, z: 0.51500845, w: 0.8571851}
-  m_LocalPosition: {x: 0.026, y: 0.296, z: 0}
+  m_LocalPosition: {x: 0.024, y: 0.282, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.226
+  m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.027
@@ -841,7 +841,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4247392, y: 1}
+    m_SensorSize: {x: 1.2648336, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -858,7 +858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182124174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3499532, y: -1.63, z: -10}
+  m_LocalPosition: {x: -4.1699996, y: -1.63, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1355,7 +1355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758132459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3499532, y: -1.63, z: -10}
+  m_LocalPosition: {x: -4.1699996, y: -1.63, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1571,12 +1571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c20f3d3a362d95943ad470403e41c4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  m_LaunchForce: 0
-  m_ShotPoint: {fileID: 0}
-  m_PointPrefab: {fileID: 0}
-  m_TotalPointCount: 0
-  m_SpaceBetweenPoints: 0
+  bulletPrefab: {fileID: 5905328540162316246, guid: b98f85969bd9d764b94a21e9c41ef6b0, type: 3}
+  m_LaunchForce: 23
+  m_ShotPoint: {fileID: 243387243}
+  m_PointPrefab: {fileID: 3516829975847866308, guid: 686fa6b83269a3c47a6bd51b86605fea, type: 3}
+  m_TotalPointCount: 6
+  m_SpaceBetweenPoints: 0.03
 --- !u!114 &2002227198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7a46b32698c8f4ab808818bf1ef85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 983462549}
   m_Speed: 2
 --- !u!1 &2002385250
 GameObject:
@@ -1624,7 +1624,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0067284107, y: -0.0071437955}
   m_SpriteTilingProperty:
-    border: {x: 0.089999996, y: 0.089999996, z: 0.099999994, w: 0.089999996}
+    border: {x: 0.099999994, y: 0.089999996, z: 0.099999994, w: 0.089999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2.01}
     newSize: {x: 14.869956, y: 2.01}

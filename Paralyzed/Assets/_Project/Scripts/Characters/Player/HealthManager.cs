@@ -55,5 +55,10 @@ namespace Paralysed
                 m_Hearts[m_HeartsIndex].enabled = true;
             }
         }
+
+        public void HurtPlayer()
+        {
+            m_CurrentHealth--;
+        }
     }
 }

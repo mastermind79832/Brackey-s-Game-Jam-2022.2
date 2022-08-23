@@ -14,6 +14,7 @@ namespace Paralysed.Character
         [SerializeField] private Transform m_ShotPoint;
 
         //points
+		[Header("Aim Direction Points")]
         [SerializeField] private GameObject m_PointPrefab;
         private GameObject[] m_Points;
         [SerializeField] private int m_TotalPointCount;

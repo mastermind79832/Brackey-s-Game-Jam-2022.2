@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Paralysed
+namespace Paralysed.Health
 {
     public class HealthManager : MonoBehaviour
     {

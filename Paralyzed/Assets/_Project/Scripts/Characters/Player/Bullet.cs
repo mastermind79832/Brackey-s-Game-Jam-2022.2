@@ -34,7 +34,7 @@ namespace Paralysed.Character
 
         private void BulletEffect(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Trap"))
+            if (other.gameObject.CompareTag("Ground") )
             {
                 b_HasHit = true;
                 m_Rigidbody.velocity = Vector2.zero;

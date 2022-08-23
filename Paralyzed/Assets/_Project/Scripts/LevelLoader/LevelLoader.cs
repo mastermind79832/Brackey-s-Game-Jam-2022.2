@@ -5,25 +5,18 @@ using UnityEngine.SceneManagement;
 
 namespace Paralysed
 {
-    public static class LevelLoader
+    public class LevelLoader
     {
-       public enum Scenes
-       {
-           MainMenu,
-           SampleScene,
-           Reload,
-           Options,
-           Levels
-       }
+   
 
-       public static void LoadScene(Scenes scene)
+       public void LoadScene()
        {
-           SceneManager.LoadScene(scene.ToString());
+			
        }
 
        public static void QuitMenu()
        {
-           Application.Quit();
+           
        }
     }
 }

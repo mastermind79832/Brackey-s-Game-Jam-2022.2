@@ -1,32 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Paralysed
 {
     public class LevelChanger : MonoBehaviour
     {
+        public Scene.SceneCollection menuSceneCollection;
+        public enum Scenes
+        {
+            MainMenu = 0,
+            Setting = 1,
+            Levels = 2,
+        }
+
        public void Play()
        {
-            LevelLoader.LoadScene(LevelLoader.Scenes.SampleScene);
-       
+            SceneManager.LoadScene(menuSceneCollection.SceneNames[(int)Scenes.MainMenu]);
        }
        
        public void LevelSelection()
        {
-           LevelLoader.LoadScene(LevelLoader.Scenes.Levels);
-       
+            SceneManager.LoadScene(menuSceneCollection.SceneNames[(int)Scenes.Levels]);
        }
        
        public void OptionMenu()
        {
-           LevelLoader.LoadScene(LevelLoader.Scenes.Options);
-       
+            SceneManager.LoadScene(menuSceneCollection.SceneNames[(int)Scenes.Setting]);
        }
 
        public void QuitApplication()
        {
-           LevelLoader.QuitMenu();
+            Application.Quit();
        }
        
     }

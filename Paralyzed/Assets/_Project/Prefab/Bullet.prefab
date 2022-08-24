@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 8581384841595102589}
-  m_AliveTime: 1
+  m_AliveTime: 3

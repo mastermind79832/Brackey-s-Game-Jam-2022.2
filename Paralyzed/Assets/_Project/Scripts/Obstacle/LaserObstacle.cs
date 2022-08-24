@@ -16,7 +16,8 @@ namespace Paralysed.Obstacle
 		private void Start()
 		{
 			CreateLaser();
-			ConnectedSwitch.SetConnection(this);
+			if(ConnectedSwitch != null)
+				ConnectedSwitch.SetConnection(this);
 		}
 
 		private void CreateLaser()

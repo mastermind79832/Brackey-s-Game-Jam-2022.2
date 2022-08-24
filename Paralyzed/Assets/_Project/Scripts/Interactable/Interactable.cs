@@ -13,7 +13,6 @@ namespace Paralysed.Interactable
 			Interact();
 		}
 
-
 		protected abstract void Interact();
 	}
 }

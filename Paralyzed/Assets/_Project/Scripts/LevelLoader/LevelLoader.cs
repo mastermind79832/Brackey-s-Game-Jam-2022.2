@@ -32,22 +32,17 @@ public class LevelLoader : MonoBehaviour
         {
 
             case LevelStatus.Locked:
-                SoundManager.Instance.Play(SoundTypes.ButtonClick);
                 levelLockedWarning.SetActive(true);
 
                 StartCoroutine(DeactivateLevelLockedScreen());
                 break;
-            case LevelStatus.Unlocked:
-                SoundManager.Instance.Play(SoundTypes.ButtonClick);
+            case LevelStatus.Unlocked:                
                 SceneManager.LoadScene(levelToLoad);
                 break;
             case LevelStatus.Completed:
-                SoundManager.Instance.Play(SoundTypes.ButtonClick);
                 SceneManager.LoadScene(levelToLoad);
                 break;
         }
-
-
     }
 
     private IEnumerator DeactivateLevelLockedScreen()

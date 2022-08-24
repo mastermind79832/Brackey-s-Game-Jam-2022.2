@@ -262,9 +262,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89fd2f7bf5398544ae3b5b06d91e8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Damage: 2
   m_StartPosition: {fileID: 5805123208043501236}
   m_EndPosition: {fileID: 5805123209991530233}
   m_LineRenderer: {fileID: 5805123209439299329}
+  ConnectedSwitch: {fileID: 0}
 --- !u!1 &5805123209991530234
 GameObject:
   m_ObjectHideFlags: 0

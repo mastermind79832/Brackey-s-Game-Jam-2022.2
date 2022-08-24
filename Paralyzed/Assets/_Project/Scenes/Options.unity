@@ -156,7 +156,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0067284107, y: -0.0071437955}
   m_SpriteTilingProperty:
-    border: {x: 0.099999994, y: 0.089999996, z: 0.099999994, w: 0.089999996}
+    border: {x: 0.089999996, y: 0.089999996, z: 0.099999994, w: 0.089999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2.01}
     newSize: {x: 14.869956, y: 2.01}
@@ -681,8 +681,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001130288}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.17, y: 1.63, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -841,7 +841,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2648336, y: 1}
+    m_SensorSize: {x: 1.2401171, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1625,7 +1625,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0067284107, y: -0.0071437955}
   m_SpriteTilingProperty:
-    border: {x: 0.099999994, y: 0.089999996, z: 0.099999994, w: 0.089999996}
+    border: {x: 0.089999996, y: 0.089999996, z: 0.099999994, w: 0.089999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2.01}
     newSize: {x: 14.869956, y: 2.01}

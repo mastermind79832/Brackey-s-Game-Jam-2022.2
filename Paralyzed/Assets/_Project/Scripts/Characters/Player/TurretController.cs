@@ -68,8 +68,15 @@ namespace Paralysed.Character
 
 		void Shoot()
         {
-            Bullet newBullet = Instantiate(bulletPrefab, m_ShotPoint.position, m_ShotPoint.rotation);
-            newBullet.AddVelocity(transform.up * m_LaunchForce);
+			GameObject bullet = BulletObjectPool.instance.GetPooledObjects();
+
+			if(bullet != null)
+            {
+
+				bullet.transform.position = m_ShotPoint.position;
+				//newBullet.AddVelocity(transform.up * m_LaunchForce);
+				bullet.SetActive(true);
+			}
         }
 
         Vector2 PointPosition(float t)
@@ -79,5 +86,6 @@ namespace Paralysed.Character
             Vector2 position = (Vector2)m_ShotPoint.position + (m_Direction.normalized * m_LaunchForce * t) + 0.5f * Physics2D.gravity * (t * t);
             return position;
         }
+		
     }
 }

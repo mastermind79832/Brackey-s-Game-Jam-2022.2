@@ -12,7 +12,7 @@ namespace Paralysed.Character
 
         private void Start()
         {
-           Destroy(gameObject,m_AliveTime);
+           gameObject.SetActive(false);
         }
 
         void Update()
@@ -49,7 +49,7 @@ namespace Paralysed.Character
 			if (other.gameObject.TryGetComponent(out PlayerController controller))
 			{
                 Camera.CameraController.Instance.CameraShake(0.2f,2f);
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }

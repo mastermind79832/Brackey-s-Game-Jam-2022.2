@@ -9,7 +9,6 @@ namespace Paralysed.Interactable
     {
 		private void OnTriggerEnter2D(Collider2D collision)
 		{
-			//if(player)
 			Interact();
 		}
 

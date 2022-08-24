@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Paralysed.Core;
 
 namespace Paralysed.Character
 {
@@ -21,10 +22,12 @@ namespace Paralysed.Character
         [SerializeField] private float m_SpaceBetweenPoints;
 
         private Vector2 m_Direction;
+		private ObjectPool<Bullet> m_BulletPool;
 
         private void Start()
 		{
 			InitializePoints();
+			m_BulletPool = new ObjectPool<Bullet>(bulletPrefab);
 		}
 
 		private void InitializePoints()
@@ -68,15 +71,12 @@ namespace Paralysed.Character
 
 		void Shoot()
         {
-			GameObject bullet = BulletObjectPool.instance.GetPooledObjects();
-
-			if(bullet != null)
-            {
-
-				bullet.transform.position = m_ShotPoint.position;
-				//newBullet.AddVelocity(transform.up * m_LaunchForce);
-				bullet.SetActive(true);
-			}
+			Bullet bullet = m_BulletPool.GetItem();
+			bullet.transform.position = m_ShotPoint.position;
+			bullet.gameObject.SetActive(true);
+			bullet.AddVelocity(transform.up * m_LaunchForce);
+			if(bullet.OnBulletDisable == null)
+			bullet.OnBulletDisable = m_BulletPool.PutItem;
         }
 
         Vector2 PointPosition(float t)

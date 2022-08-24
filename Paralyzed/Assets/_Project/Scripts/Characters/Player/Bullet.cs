@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace Paralysed.Character
 {
@@ -10,12 +11,34 @@ namespace Paralysed.Character
         private bool b_HasHit;
         [SerializeField] private float m_AliveTime;
 
-        private void Start()
+        public Action<Bullet> OnBulletDisable;
+
+        private Coroutine m_DeathRoutine;
+        private WaitForSeconds m_DeathWait;
+
+        private void Awake()
         {
-           gameObject.SetActive(false);
+            m_DeathWait = new WaitForSeconds(m_AliveTime);
         }
 
-        void Update()
+		private void OnEnable()
+		{
+            m_DeathRoutine = StartCoroutine(DeathTimer());
+		}
+		private void OnDisable()
+		{
+            StopCoroutine(m_DeathRoutine);
+			OnBulletDisable(this);
+		}
+
+		private IEnumerator DeathTimer()
+		{
+            gameObject.SetActive(true);
+            yield return m_DeathWait;
+            gameObject.SetActive(false);
+		}
+
+		void Update()
         {
             HasHit();
         }
@@ -50,8 +73,9 @@ namespace Paralysed.Character
 			{
                 Camera.CameraController.Instance.CameraShake(0.2f,2f);
                 gameObject.SetActive(false);
+                return;
             }
         }
-    }
+	}
 }
 

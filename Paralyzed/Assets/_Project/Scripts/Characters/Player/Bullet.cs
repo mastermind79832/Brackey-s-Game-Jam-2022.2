@@ -8,6 +8,12 @@ namespace Paralysed.Character
     {
         [SerializeField] private Rigidbody2D m_Rigidbody;
         private bool b_HasHit;
+        [SerializeField] private float m_AliveTime;
+
+        private void Start()
+        {
+           Destroy(gameObject,m_AliveTime);
+        }
 
         void Update()
         {
@@ -37,15 +43,14 @@ namespace Paralysed.Character
             if (other.gameObject.CompareTag("Ground") )
             {
                 b_HasHit = true;
-                m_Rigidbody.velocity = Vector2.zero;
-                m_Rigidbody.isKinematic = true;
+                
             }
 
 			if (other.gameObject.TryGetComponent(out PlayerController controller))
 			{
                 Camera.CameraController.Instance.CameraShake(0.2f,2f);
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
     }
 }

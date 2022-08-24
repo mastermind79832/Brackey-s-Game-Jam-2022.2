@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
   m_Name: FirstMessage
   m_EditorClassIdentifier: 
-  TitleText: 
-  MessageText: 
-  ButtonText: 
+  TitleText: Spirit
+  MessageText: This is a message from spirit
+  ButtonText: COOL

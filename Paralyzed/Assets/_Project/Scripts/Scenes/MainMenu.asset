@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: MainMenu
   m_EditorClassIdentifier: 
   SceneNames:
-  - MainMenu
-  - Options
   - Levels

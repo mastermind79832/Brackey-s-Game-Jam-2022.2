@@ -7,7 +7,8 @@ namespace Paralysed.Scene
 {
     public class MainMenuLoader : MonoBehaviour
     {
-        public Scene.SceneCollection menuSceneCollection;
+        [SerializeField]public Scene.SceneCollection menuSceneCollection;
+        [SerializeField] private GameObject OptionPanel;
         public enum Scenes
         {
             MainMenu = 0,
@@ -16,17 +17,28 @@ namespace Paralysed.Scene
 
         public void Play()
         {
-            SceneManager.LoadScene(menuSceneCollection.SceneNames[(int)Scenes.MainMenu]);
+            SceneManager.LoadScene(menuSceneCollection.SceneNames[0]);
+            
         }
 
         public void OptionMenu()
         {
-            SceneManager.LoadScene(menuSceneCollection.SceneNames[(int)Scenes.Setting]);
+            SceneManager.LoadScene(menuSceneCollection.SceneNames[1]);
         }
 
         public void QuitApplication()
         {
             Application.Quit();
+        }
+
+        public void ToggelPanel()
+        {
+            if (OptionPanel != null)
+            {
+                bool isActive = OptionPanel.activeSelf;
+                
+                OptionPanel.SetActive(!isActive);
+            }
         }
 
     }

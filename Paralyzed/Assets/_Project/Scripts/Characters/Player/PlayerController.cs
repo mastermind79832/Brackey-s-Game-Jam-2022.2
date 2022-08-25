@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Paralysed.Core;
 
 namespace Paralysed.Character
 {
-    public class PlayerController : MonoBehaviour
-    {
+    public class PlayerController : MonoBehaviour, IDamageable, IRespawnable
+	{ 
 		[Header("Componenet")]
         [SerializeField] private Rigidbody2D m_Rigidbody;
+		[SerializeField] private BatteryController m_BatteryController;
 
 		[Header("Ground Check")]
         [SerializeField] private float m_CheckRadius;
@@ -22,6 +24,13 @@ namespace Paralysed.Character
 
 		[Header("Ground Collider layer")]
         [SerializeField] private LayerMask m_WhatIsGround;
+
+		private Vector3 m_RespawnPoint;
+
+		private void Start()
+		{
+			m_RespawnPoint = transform.position;
+		}
 
 		private void Update()
         {
@@ -57,6 +66,20 @@ namespace Paralysed.Character
 		private void DecreaseJumpTimer() =>	m_JumpTimeCounter -= Time.deltaTime;
 		private void Jump() => m_Rigidbody.velocity = Vector2.up * m_JumpForce;
 		private void CheckGround() => b_IsGrounded = Physics2D.OverlapCircle(m_GroundCheck.position, m_CheckRadius, m_WhatIsGround);
-		
+
+		public void TakeDamage(float value)
+		{
+			m_BatteryController.Reduce(value);
+		}
+
+		public void SetRespawn(Vector3 respawnPoint)
+		{
+			m_RespawnPoint = respawnPoint;
+		}
+
+		public void Respawn()
+		{
+			transform.position = m_RespawnPoint;
+		}
 	}
 }

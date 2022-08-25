@@ -7,17 +7,21 @@ namespace Paralysed.Interactable
 {
 	public class Spirit : Interactable
 	{
-		[SerializeField]
-		private MessageSO message;
-
+		[SerializeField] private MessageSO message;
+		[SerializeField] private Transform RespawnPoint; 
 		private MessageDisplayController messageDisplayController;
+		
 		private void Start()
 		{
 			messageDisplayController = MessageDisplayController.Instance;
 		}
-		protected override void Interact()
+		protected override void Interact(Collider2D collider)
 		{
-			messageDisplayController.ShowMessage(message);
+			if(collider.TryGetComponent(out Core.IRespawnable respawnable))
+			{
+				messageDisplayController.ShowMessage(message);
+				respawnable.SetRespawn(RespawnPoint.position);
+			}
 		}
 	}
 }

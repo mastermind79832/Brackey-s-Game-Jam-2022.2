@@ -24,10 +24,12 @@ namespace Paralysed.Message
 		private void close()
 		{
 			m_MessagePanel.SetActive(false);
+			Time.timeScale = 1;
 		}
 
 		public void ShowMessage(MessageSO message, Action onButtonPressed = null)
 		{
+			Time.timeScale = 0;
 			m_TitleText.text = message.TitleText;
 			m_Content.text = message.MessageText;
 			m_ButtonText.text = message.ButtonText;

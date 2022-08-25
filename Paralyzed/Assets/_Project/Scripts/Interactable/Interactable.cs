@@ -9,9 +9,9 @@ namespace Paralysed.Interactable
     {
 		private void OnTriggerEnter2D(Collider2D collision)
 		{
-			Interact();
+			Interact(collision);
 		}
 
-		protected abstract void Interact();
+		protected abstract void Interact(Collider2D collision);
 	}
 }

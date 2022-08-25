@@ -45,7 +45,7 @@ namespace Paralysed.Interactable
 			m_Animator.SetBool(anim_IsActive, b_IsActive);
 		}
 
-		protected override void Interact()
+		protected override void Interact(Collider2D collider)
 		{
 			if (!b_IsMultiActivateable && b_IsActivatedOnce)
 				return;

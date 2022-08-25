@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Paralysed.Core;
 
 namespace Paralysed.Obstacle
 {
@@ -12,16 +13,21 @@ namespace Paralysed.Obstacle
 
 		private void OnCollisionEnter2D(Collision2D collision)
 		{
-			//if(collision.gameObject.TryGetComponent(out IDamageable damageable)
-			if(true)// check for Idamageable
+			// if(collision.gameObject.TryGetComponent(out IDamageable damageable)
+			if(collision.gameObject.TryGetComponent(out IDamageable damageable)) // check for Idamageable
 			{
-				Obstruct(); // send damageable
+				Obstruct(damageable); // send damageable
+			}
+
+			if(collision.gameObject.TryGetComponent(out IRespawnable respawnable))
+			{
+				respawnable.Respawn();
 			}
 		}
 
-		protected virtual void Obstruct()
+		protected virtual void Obstruct(IDamageable damageable)
 		{
-			// send the damage to damageable
+			damageable.TakeDamage(m_Damage);
 		}
 	}
 }

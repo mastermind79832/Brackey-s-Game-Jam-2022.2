@@ -44,6 +44,9 @@ namespace Paralysed.Obstacle
 
 		private void FixedUpdate()
 		{
+			if (!b_IsRectractable)
+				return;
+
 			Movement();
 		}
 

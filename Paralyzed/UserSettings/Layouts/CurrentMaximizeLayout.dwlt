@@ -85,7 +85,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 34502
+  controlID: 34815
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,7 +425,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -441,9 +441,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 94.179306, y: -31.764757, z: 4.24713}
+    m_Target: {x: -4.5680623, y: -2.1783228, z: 5.7454066}
     speed: 2
-    m_Value: {x: 94.55583, y: -31.691677, z: 4.239663}
+    m_Value: {x: -7.4586067, y: -1.9182749, z: 0.013844343}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -494,9 +494,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.846445
+    m_Target: 2.9485388
     speed: 2
-    m_Value: 16.593136
+    m_Value: 0.9227235
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -668,7 +668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1060
-    width: 1456
+    width: 1324
     height: 291
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -715,21 +715,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Project/Prefab
+    - Assets/_Project/Scenes/Levels
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Project/Prefab
+  - Assets/_Project/Scenes/Levels
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\_Projects\UnityProjects\Brackey-s-Game-Jam-2022.2\Paralyzed
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: b2630000
-    m_LastClickedID: 25522
+    scrollPos: {x: 0, y: 113}
+    m_SelectedIDs: e2630000
+    m_LastClickedID: 25570
     m_ExpandedIDs: 00000000a6630000a8630000aa630000ac630000ae630000b0630000b2630000b4630000c463000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -783,9 +783,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9c65feff
-    m_LastClickedInstanceID: -105060
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c27f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -871,9 +871,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9c65feff
-      m_LastClickedID: -105060
-      m_ExpandedIDs: b065feff9669feffcacdfeff60cefeff1cd4feff18dafeffcadafeff00dcfeff06e1feffa6e3feff42eefeffe0f1feff9014ffff9214ffffee15ffffe216ffffea73fffffc73ffffee74ffff2275ffff8a75ffffe676ffff6a77ffffc286ffffbc87ffff3090ffff9e93ffff3eb4ffff40b4ffff2cb5ffff3eb9ffff88c7000092c70000cec70000c0c8000036d8000090d90000a4d90000606601006866010070660100246c010072820100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2807feff200cfefffc4ffefffe4ffeff0652feffbe58feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -889,7 +889,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 11}
+        m_ClientGUIView: {fileID: 14}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 108
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

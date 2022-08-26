@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
   m_Name: New Message
   m_EditorClassIdentifier: 
-  TitleText: Amit
-  MessageText: This is a message from amit
-  ButtonText: Yeay
+  TitleText: Infernal Oracles
+  MessageText: Hey !! Welcome. We are here to Help You. Go ahed and meet my brothers
+    they'll help you throughout you journey.
+  ButtonText: Ok

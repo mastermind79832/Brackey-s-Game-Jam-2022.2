@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
-  m_Name: New Message
+  m_Name: 5th Spirit
   m_EditorClassIdentifier: 
-  TitleText: Infernal Oracles
-  MessageText: Hey !! Welcome. We are here to Help You. Go ahed and meet my brothers
-    they'll help you throughout you journey.
-  ButtonText: Ok
+  TitleText: Pliasy
+  MessageText: Wow you are here !! I wasn't expecting to see you this soon. Ok see
+    can you see that level just turn it off and Go. Best Of Luck.
+  ButtonText: Thank You

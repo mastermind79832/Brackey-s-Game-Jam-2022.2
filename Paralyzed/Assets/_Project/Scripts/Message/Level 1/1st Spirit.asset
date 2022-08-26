@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
-  m_Name: FirstMessage
+  m_Name: 1st Spirit
   m_EditorClassIdentifier: 
-  TitleText: Spirit
-  MessageText: This is a message from spirit
-  ButtonText: COOL
+  TitleText: Infernal Oracles
+  MessageText: rothers they'll help you throughout you journey and meet my brothers
+    they'll help you throughout you journey.
+  ButtonText: Ok

@@ -1,6 +1,5 @@
 using System.Collections;
 using Enums;
-using Managers;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;

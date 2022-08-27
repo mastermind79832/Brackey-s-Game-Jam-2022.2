@@ -1093,6 +1093,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (101)
@@ -1336,7 +1340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056745, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.09
+      value: 90.36
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056745, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3567,6 +3571,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (3)
@@ -4948,6 +4956,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (99)
@@ -5884,6 +5896,10 @@ PrefabInstance:
     - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_RectractDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
@@ -6966,6 +6982,10 @@ PrefabInstance:
     - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_RectractDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
@@ -9738,7 +9758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056745, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.8
+      value: 71.49
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056745, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12648,6 +12668,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (5)
@@ -13598,6 +13622,10 @@ PrefabInstance:
     - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_RectractDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
@@ -15963,6 +15991,10 @@ PrefabInstance:
     - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_RectractDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
@@ -19634,6 +19666,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (93)
@@ -20928,6 +20964,10 @@ PrefabInstance:
     - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_RectractDistance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
@@ -22538,6 +22578,10 @@ PrefabInstance:
       propertyPath: m_RectractDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1972977666602056746, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
+      propertyPath: m_RectractInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1972977666602056758, guid: 39bc1a1754dfba044bc561e277b335cf, type: 3}
       propertyPath: m_Name
       value: ObstacleSpike (1)
@@ -23090,10 +23134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 555789320219452519, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_MaxHealth
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2152047573459520213, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -23141,74 +23181,6 @@ PrefabInstance:
     - target: {fileID: 4699586024653841190, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_Name
       value: Character
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627235, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627235, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -73711223
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627236, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7269
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627236, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7269
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627236, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.7269
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188029627237, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LaunchForce
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503809, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_GravityScale
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503811, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503811, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -73711223
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5415757
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5536443
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503814, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_JumpTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095188403503814, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_CheckRadius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095189166827021, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8123095189180603816, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}

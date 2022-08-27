@@ -27,6 +27,8 @@ namespace Paralysed.Character
         [SerializeField] private LayerMask m_WhatIsGround;
 
 		private Vector3 m_RespawnPoint;
+		
+		[SerializeField] private AudioClip A_JumpClip;
 
 		private void Start()
 		{

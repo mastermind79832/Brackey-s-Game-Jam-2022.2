@@ -5169,6 +5169,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  A_JumpClip: {fileID: 8300000, guid: 7f6c9f5c2881f6e49a5fc271b46c85ec, type: 3}
 --- !u!114 &4340579265388579155
 MonoBehaviour:
   m_ObjectHideFlags: 0

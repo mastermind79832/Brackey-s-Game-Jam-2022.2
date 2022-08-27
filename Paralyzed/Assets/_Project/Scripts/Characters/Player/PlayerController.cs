@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -80,6 +81,23 @@ namespace Paralysed.Character
 		public void Respawn()
 		{
 			transform.position = m_RespawnPoint;
+		}
+		//iske neeche maine lika error aye tho nikaldena
+		private void OnCollisionEnter(Collision collision)
+		{
+			if (collision.gameObject.CompareTag("MovingPlatform"))
+			{
+				this.transform.parent = collision.gameObject.transform;
+
+			}
+		}
+
+		private void OnCollisionExit(Collision collision)
+		{
+			if (collision.gameObject.CompareTag("MovingPlatform"))
+			{
+				this.transform.parent = null;
+			}
 		}
 	}
 }

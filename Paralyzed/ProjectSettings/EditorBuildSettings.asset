@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/Levels.unity
     guid: 9062f0312cf67194ca819c22f25a5a5c
   - enabled: 1
-    path: Assets/_Project/Scenes/Options.unity
+    path: Assets/_Project/Scenes/CharacterTest.unity
     guid: 196cac1d38d660e4daf09ea06eef727d
   m_configObjects: {}

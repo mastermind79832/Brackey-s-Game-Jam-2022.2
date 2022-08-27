@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Paralysed.GameManager
 {
@@ -20,8 +22,15 @@ namespace Paralysed.GameManager
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        
-        
-        
+
+        [SerializeField] private GameObject gameOverPanel;
+
+
+        public void CallGameOverPanel()
+        {
+            Instantiate(gameOverPanel, Vector3.zero, quaternion.identity);
+        }
+
+
     }
 }

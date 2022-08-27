@@ -1515,6 +1515,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6326068851679281238, guid: 8a1849cc407070c449d75533692ae6b7, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326068851679281238, guid: 8a1849cc407070c449d75533692ae6b7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0166eb5d120a7014c8d3c74dcaad5711, type: 3}
     - target: {fileID: 6326068851679281239, guid: 8a1849cc407070c449d75533692ae6b7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

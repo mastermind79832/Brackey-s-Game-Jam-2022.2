@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Paralysed.GameManager;
 
 namespace Paralysed.Character
 {
@@ -49,6 +50,7 @@ namespace Paralysed.Character
         {
             m_DeathParticle = Instantiate(m_DeathParticle, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(0f);
+            GameManager.GameManager.Instance.CallGameOverPanel();
             this.transform.parent.GetChild(2).SetParent(null);
             transform.gameObject.SetActive(false);
             

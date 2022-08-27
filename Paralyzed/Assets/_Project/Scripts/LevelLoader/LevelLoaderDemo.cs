@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,15 @@ namespace Paralysed
 
             if (currentlevel >= PlayerPrefs.GetInt("levelsUnlocked"))
             {
-                PlayerPrefs.SetInt("levelsUnlocked",currentlevel + 1);
+                PlayerPrefs.SetInt("levelsUnlocked", currentlevel + 1);
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Completed");
             }
         }
     }

@@ -9,26 +9,27 @@ namespace Paralysed.Level
 {
     public class LevelManager : MonoBehaviour
     {
-        private int levelsUnlocked;
+         [Header("Level Loader")]
+         [SerializeField] private Button[] m_Button;
+         private int levelsUnlocked;
 
-        public Button[] buttons;
         // Start is called before the first frame update
         void Start()
         {
             //PlayerPrefs.DeleteKey("levelsUnlocked");
             levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
-            for (int i = 0; i < buttons.Length; i++)
+            for (int i = 0; i < m_Button.Length; i++)
             {
-                buttons[i].interactable = false;
+                m_Button[i].interactable = false;
             }
             
             for (int i = 0; i < levelsUnlocked; i++)
             {
-                buttons[i].interactable = true;
+                m_Button[i].interactable = true;
             }
             
-            Debug.Log(buttons.Length);
+            Debug.Log(m_Button.Length);
 
         }
 

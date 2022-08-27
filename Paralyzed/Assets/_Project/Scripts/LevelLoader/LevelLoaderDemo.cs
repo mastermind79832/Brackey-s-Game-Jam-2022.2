@@ -16,7 +16,7 @@ namespace Paralysed
             {
                 if (currentlevel >= PlayerPrefs.GetInt("levelsUnlocked"))
                 {
-                    PlayerPrefs.SetInt("levelsUnlocked", currentlevel + 1);
+                    PlayerPrefs.SetInt("levelsUnlocked", currentlevel );
                     SceneManager.LoadScene(currentlevel + 1);
                     Debug.Log("Completed");
                 }

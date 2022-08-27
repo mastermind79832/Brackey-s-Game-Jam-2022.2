@@ -24,6 +24,8 @@ namespace Paralysed.Character
         private Vector2 m_Direction;
 		private ObjectPool<Bullet> m_BulletPool;
 
+		[SerializeField] private AudioClip a_ShootSound;
+
         private void Start()
 		{
 			InitializePoints();
@@ -44,6 +46,7 @@ namespace Paralysed.Character
             if (Input.GetMouseButtonDown(0))
             {
                 Shoot();
+                SoundManager.Instance.Play(a_ShootSound);
             }
         }
 

@@ -15,7 +15,6 @@ namespace Paralysed.Level
         // Start is called before the first frame update
         void Start()
         {
-            PlayerPrefs.DeleteKey("levelsUnlocked");
             levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
             for (int i = 0; i < buttons.Length; i++)
@@ -23,14 +22,12 @@ namespace Paralysed.Level
                 buttons[i].interactable = false;
             }
             
-            
-            for (int i = 0; i < levelsUnlocked; i++)
+            /*for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
-            }
+            }*/
             
-            
-            
+            Debug.Log(buttons.Length);
 
         }
 

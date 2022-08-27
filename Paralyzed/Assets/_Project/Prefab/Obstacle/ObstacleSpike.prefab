@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069a7d832304319489162a8b598b255f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 5
+  m_Damage: 20
   b_IsRectractable: 1
   m_RectractDistance: 0.5
   m_RectractSpeed: 1

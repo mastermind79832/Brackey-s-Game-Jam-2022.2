@@ -11,9 +11,9 @@ namespace Paralysed.Character
         [SerializeField] private float m_MaxHealth;
         [SerializeField] private Image m_BatteryFill;
 
-        [Header("Particle")]
-        [SerializeField] private GameObject m_DeadParticle;
-        private ParticleSystem m_ParticleSystem;
+        //[Header("Particle")]
+        //[SerializeField] private GameObject m_DeadParticle;
+        //private ParticleSystem m_ParticleSystem;
 
         private float m_CurrentHealth;
 
@@ -21,7 +21,7 @@ namespace Paralysed.Character
         {
             m_CurrentHealth = m_MaxHealth;
             UpdateBattery();
-           m_DeadParticle.SetActive(false);
+          // m_DeadParticle.SetActive(false);
         }
        
         public void UpdateBattery()
@@ -38,21 +38,21 @@ namespace Paralysed.Character
             if (m_CurrentHealth <= 0)
             {
 
-                StartCoroutine(PlayerDeath());
+                transform.GetChild(1).gameObject.SetActive(false);
 
             }
             
         }
 
-        IEnumerator PlayerDeath()
-        {
+        //IEnumerator PlayerDeath()
+        //{
 
-            m_DeadParticle.SetActive(true);
-            yield return new WaitForSeconds(.5f);
-            transform.GetChild(1).gameObject.SetActive(false);
-            m_ParticleSystem = m_DeadParticle.GetComponentInChildren<ParticleSystem>();
-            m_ParticleSystem.Play();
-        }
+        //    m_DeadParticle.SetActive(true);
+        //    yield return new WaitForSeconds(.5f);
+            
+        //    m_ParticleSystem = m_DeadParticle.GetComponentInChildren<ParticleSystem>();
+        //    m_ParticleSystem.Play();
+        //}
 
        
     }

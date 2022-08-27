@@ -86,6 +86,8 @@ namespace Paralysed.Character
             Vector2 position = (Vector2)m_ShotPoint.position + (m_Direction.normalized * m_LaunchForce * t) + 0.5f * Physics2D.gravity * (t * t);
             return position;
         }
+
+		
 		
     }
 }

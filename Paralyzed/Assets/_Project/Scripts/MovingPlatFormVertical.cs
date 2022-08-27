@@ -42,5 +42,16 @@ namespace Paralysed._Project.Scripts
         }
 
         private bool IsPointReached() => transform.position == m_WayPoints[m_CurrentIndex].position;
+
+        //
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            collision.transform.parent = transform;
+        }
+
+        private void OnCollisionExit2D(Collision2D collision)
+        {
+            collision.transform.parent = null;
+        }
     }
 }

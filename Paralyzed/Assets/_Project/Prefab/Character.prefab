@@ -669,7 +669,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: -3.338133e-13, z: 0.00000003457069}
     m_Rotation: {x: -0.000019318693, y: 180.01768, z: -0.0000000013678674}
-    m_Scale: {x: 0.2, y: 0.2, z: 0.2}
+    m_Scale: {x: 0.44, y: 0.23, z: 0.59}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -746,7 +746,7 @@ ParticleSystem:
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0.2
     sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomPositionAmount: 0.5
     radius:
       value: 1
       mode: 0
@@ -4859,7 +4859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a197a9928336224097ce47327db120f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxHealth: 0
+  m_MaxHealth: 10
   m_BatteryFill: {fileID: 34563737614884517}
 --- !u!1 &8123095188029627234
 GameObject:
@@ -4889,7 +4889,7 @@ Transform:
   m_GameObject: {fileID: 8123095188029627234}
   m_LocalRotation: {x: -0, y: -0, z: 0.50742984, w: 0.86169314}
   m_LocalPosition: {x: -2.5670004, y: 0.08399999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7269, y: 1.7269, z: 1.7269}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8886860997131701342}
@@ -4935,8 +4935,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -73711223
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f6ed662914c6714479bbe530ec6f465e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4962,7 +4962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5905328540162316246, guid: b98f85969bd9d764b94a21e9c41ef6b0, type: 3}
-  m_LaunchForce: 15
+  m_LaunchForce: 18
   m_ShotPoint: {fileID: 8123095189501157363}
   m_PointPrefab: {fileID: 3516829975847866308, guid: 686fa6b83269a3c47a6bd51b86605fea, type: 3}
   m_TotalPointCount: 6
@@ -5041,8 +5041,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8123095188403503808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.2, y: 4.6, z: 0}
+  m_LocalScale: {x: 1.5415757, y: 1.5536443, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3875995970398884373}
@@ -5090,8 +5090,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -73711223
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: be06caaa62ddd4f4a9e8a8019dd50fcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5135,7 +5135,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 2.2
   m_Material: {fileID: 6200000, guid: 4c0af190e535782478aeef7022e2e146, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5175,10 +5175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 8123095188403503809}
   m_BatteryController: {fileID: 555789320219452519}
-  m_CheckRadius: 0.2
+  m_CheckRadius: 0.4
   m_GroundCheck: {fileID: 8123095188385677886}
   m_JumpForce: 8
-  m_JumpTime: 0.3
+  m_JumpTime: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 64
@@ -5206,7 +5206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8123095189166827020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.02, y: -0.029999971, z: 0}
+  m_LocalPosition: {x: -3.37, y: -0.029999971, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5229,7 +5229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8123095189180603818
 Transform:
   m_ObjectHideFlags: 0
@@ -5331,7 +5331,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8625814314353655952}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 0.6
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5405,9 +5405,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 2
-      minScalar: 5
+      minMaxState: 3
+      scalar: 0.3
+      minScalar: 0.8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5513,7 +5513,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.77647066, g: 0.5254902, b: 1, a: 1}
+      maxColor: {r: 0.94000465, g: 0.8726415, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

@@ -16,7 +16,7 @@ namespace Paralysed.Level
         // Start is called before the first frame update
         void Start()
         {
-            //PlayerPrefs.DeleteKey("levelsUnlocked");
+            //PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory
             levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
             for (int i = 0; i < m_Button.Length; i++)

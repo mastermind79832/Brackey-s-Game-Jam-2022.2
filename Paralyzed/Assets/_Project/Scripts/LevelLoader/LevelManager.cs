@@ -22,10 +22,12 @@ namespace Paralysed.Level
                 buttons[i].interactable = false;
             }
             
-            for (int i = 0; i < levelsUnlocked; i++)
+            /*for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
-            }
+            }*/
+            
+            Debug.Log(buttons.Length);
 
         }
 

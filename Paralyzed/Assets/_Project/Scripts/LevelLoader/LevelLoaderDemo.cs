@@ -8,21 +8,17 @@ namespace Paralysed
 {
     public class LevelLoaderDemo : MonoBehaviour
     {
-        public void NextLevel()
+        private void OnCollisionEnter2D(Collision2D col)
         {
-            int currentlevel = SceneManager.GetActiveScene().buildIndex;
-
-            if (currentlevel >= PlayerPrefs.GetInt("levelsUnlocked"))
+            if (col.gameObject.CompareTag("Player"))
             {
-                PlayerPrefs.SetInt("levelsUnlocked", currentlevel + 1);
-            }
-        }
+                int currentlevel = SceneManager.GetActiveScene().buildIndex;
 
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Completed");
+                if (currentlevel >= PlayerPrefs.GetInt("levelsUnlocked"))
+                {
+                    PlayerPrefs.SetInt("levelsUnlocked", currentlevel + 1);
+                    Debug.Log("Completed");
+                }
             }
         }
     }

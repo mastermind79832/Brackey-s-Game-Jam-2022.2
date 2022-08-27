@@ -15,6 +15,8 @@ namespace Paralysed.Character
         [Header("Particle")]
         [SerializeField] private GameObject m_DeathParticle;
 
+        [SerializeField] private AudioClip a_DeathClip;
+
         
        
         private float m_CurrentHealth;
@@ -53,7 +55,7 @@ namespace Paralysed.Character
             GameManager.GameManager.Instance.CallGameOverPanel();
             this.transform.parent.GetChild(2).SetParent(null);
             transform.gameObject.SetActive(false);
-            
+            SoundManager.Instance.Play(a_DeathClip);
         }
 
        

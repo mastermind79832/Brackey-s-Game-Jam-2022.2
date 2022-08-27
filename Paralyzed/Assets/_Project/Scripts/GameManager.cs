@@ -29,7 +29,9 @@ namespace Paralysed.GameManager
         public void CallGameOverPanel()
         {
             Instantiate(gameOverPanel, Vector3.zero, quaternion.identity);
+            Time.timeScale = 0;
         }
+        
 
 
     }

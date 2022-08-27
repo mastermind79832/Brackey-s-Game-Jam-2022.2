@@ -5,4 +5,7 @@ public class GameThingy : MonoBehaviour
     void Start() {
         SoundManager.Instance.PlayMusic(BattleMusic);
     }
+    public  void StopBackGroundMusic()
+    {
+    } 
 }

@@ -10,7 +10,6 @@ namespace Paralysed.Scene
     public class SceneCollection : ScriptableObject
     {
         [Header("Select your Scene to load")]
-        [Tooltip("Element 0 is for the play button")]
         public string[] SceneNames;
         
     }

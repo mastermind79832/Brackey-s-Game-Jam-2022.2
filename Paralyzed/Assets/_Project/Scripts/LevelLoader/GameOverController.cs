@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Paralysed.GameOver
 {
-    public class GameOverPanel : MonoBehaviour
+    public class GameOverController : MonoBehaviour
     {
         public void Reload()
         {

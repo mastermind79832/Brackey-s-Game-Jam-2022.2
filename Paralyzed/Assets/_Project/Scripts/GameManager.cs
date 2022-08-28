@@ -3,36 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Paralysed.Core;
 
-namespace Paralysed.GameManager
+namespace Paralysed
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : MonoSingletonGeneric<GameManager>
     {
         [SerializeField] private GameObject gameOverPanel;
-        public static GameManager Instance { get; private set; }
+        [SerializeField] private Scene.SceneSwtichController sceneController;
+        public Scene.SceneSwtichController sceneSwtichController { get { return sceneController; } }    
 
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(this);
-                return;
-            }
-
-            Instance = this;
+		protected override void Awake()
+		{
+			base.Awake();
             DontDestroyOnLoad(gameObject);
-        }
+		}
 
-
-
-        public void CallGameOverPanel()
+		public void CallGameOverPanel()
         {
             Instantiate(gameOverPanel, Vector3.zero, quaternion.identity);
             Time.timeScale = 0;
         }
-        
-
-
     }
 }

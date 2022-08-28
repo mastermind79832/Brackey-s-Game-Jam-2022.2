@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Paralysed.GameManager;
+using Paralysed;
 
 namespace Paralysed.Character
 {
@@ -11,11 +11,8 @@ namespace Paralysed.Character
         [Header("Health")]
         [SerializeField] private float m_MaxHealth;
         [SerializeField] private Image m_BatteryFill;
-
         
         [SerializeField] private AudioClip a_DeathClip;
-
-        
        
         private float m_CurrentHealth;
 
@@ -50,7 +47,7 @@ namespace Paralysed.Character
         {
            
             yield return new WaitForSeconds(0f);
-            GameManager.GameManager.Instance.CallGameOverPanel();
+            GameManager.Instance.CallGameOverPanel();
             this.transform.parent.GetChild(2).SetParent(null);
             transform.gameObject.SetActive(false);
             SoundManager.Instance.Play(a_DeathClip);

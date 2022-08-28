@@ -10,8 +10,7 @@ namespace Paralysed.Level
          [Header("Level Loader")]
          [SerializeField] private Button[] m_Button;
          private int levelsUnlocked;
-
-        
+    
         void Start()
         {
             //PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory

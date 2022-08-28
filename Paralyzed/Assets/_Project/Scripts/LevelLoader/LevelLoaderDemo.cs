@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Paralysed
+namespace Paralysed.Scene
 {
     public class LevelLoaderDemo : MonoBehaviour
     { 

@@ -5182,9 +5182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a197a9928336224097ce47327db120f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxHealth: 10
+  m_MaxHealth: 200
   m_BatteryFill: {fileID: 34563737614884517}
-  m_DeathParticle: {fileID: 2223277813001305160, guid: 30409d54495daef41807f36834284ad8, type: 3}
   a_DeathClip: {fileID: 8300000, guid: a9d01c0e0709c3546a889fb3b45cd517, type: 3}
 --- !u!1 &8123095189166827020
 GameObject:
@@ -5263,7 +5262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxHealth: 20
   m_BatteryFill: {fileID: 0}
-  m_DeathParticle: {fileID: 0}
   a_DeathClip: {fileID: 0}
 --- !u!1 &8123095189501157362
 GameObject:

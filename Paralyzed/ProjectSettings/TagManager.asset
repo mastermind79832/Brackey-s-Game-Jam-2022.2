@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
@@ -11,9 +13,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - PostProcessing
   - 
   - 
   - 
@@ -40,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Spikes
+    uniqueID: 2884005395
+    locked: 0
+  - name: Platform
+    uniqueID: 486628981
+    locked: 0
+  - name: Player
+    uniqueID: 4221256073
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3107438495
     locked: 0

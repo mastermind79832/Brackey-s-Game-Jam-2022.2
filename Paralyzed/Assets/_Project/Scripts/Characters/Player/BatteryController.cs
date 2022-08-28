@@ -12,9 +12,7 @@ namespace Paralysed.Character
         [SerializeField] private float m_MaxHealth;
         [SerializeField] private Image m_BatteryFill;
 
-        [Header("Particle")]
-        [SerializeField] private GameObject m_DeathParticle;
-
+        
         [SerializeField] private AudioClip a_DeathClip;
 
         
@@ -50,7 +48,7 @@ namespace Paralysed.Character
 
         IEnumerator PlayerDeath()
         {
-            m_DeathParticle = Instantiate(m_DeathParticle, transform.position, Quaternion.identity);
+           
             yield return new WaitForSeconds(0f);
             GameManager.GameManager.Instance.CallGameOverPanel();
             this.transform.parent.GetChild(2).SetParent(null);

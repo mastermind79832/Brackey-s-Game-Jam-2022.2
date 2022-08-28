@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
 using UnityEngine.SceneManagement;
+
 
 namespace Paralysed.Level
 {
@@ -13,7 +11,7 @@ namespace Paralysed.Level
          [SerializeField] private Button[] m_Button;
          private int levelsUnlocked;
 
-        // Start is called before the first frame update
+        
         void Start()
         {
             //PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory
@@ -38,10 +36,6 @@ namespace Paralysed.Level
             SceneManager.LoadScene(levelIndex);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
         
-        }
     }
 }

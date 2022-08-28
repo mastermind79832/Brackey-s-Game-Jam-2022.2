@@ -10201,18 +10201,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8732161284889275879, guid: 97a1a2b9271625c44aa674b0937aad94, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 118.813
-      objectReference: {fileID: 0}
-    - target: {fileID: 8732161284889275879, guid: 97a1a2b9271625c44aa674b0937aad94, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.0000015497
-      objectReference: {fileID: 0}
-    - target: {fileID: 8732161284889275879, guid: 97a1a2b9271625c44aa674b0937aad94, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -71.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a1a2b9271625c44aa674b0937aad94, type: 3}
 --- !u!224 &34563736747215584 stripped

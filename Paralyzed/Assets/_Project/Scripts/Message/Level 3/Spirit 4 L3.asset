@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spirit 4 L3
   m_EditorClassIdentifier: 
   TitleText: Aans
-  MessageText: Sorry for the rude behaviour by my brother. Actually he is very happy
-    but can't express his feelings. See there is a lever you have to turn that off
-    to move forward.
+  MessageText: Sorry for the rude behaviour of my brother. Actually he is very happy
+    but can't express his feelings. See there is a lever and  you have to turn that
+    off to move forward.
   ButtonText: Ok

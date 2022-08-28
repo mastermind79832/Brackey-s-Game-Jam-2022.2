@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
   m_Name: 2nd Spirit
   m_EditorClassIdentifier: 
-  TitleText: Messengers of Drefis
-  MessageText: Hey I think You Have  met with my brother.  You Have to turn off the
-    level to go down.
+  TitleText: ' Drefis'
+  MessageText: Hey I think You Have  already met with my brother.  You have to turn
+    off the lever to go down.
   ButtonText: Sure!!

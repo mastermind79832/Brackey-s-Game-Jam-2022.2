@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7878170b4c0064790829fff8972317, type: 3}
   m_Name: 1st Spirit
   m_EditorClassIdentifier: 
-  TitleText: Infernal Oracles
-  MessageText: Hey Stranger. Welcome !! All the best for your journey.Go  to my brothers
+  TitleText: ' Oracles'
+  MessageText: Hey Stranger. Welcome !! All the best for your Journey.Go  to my Brothers
     they'll help you throughout your journey.
   ButtonText: Ok

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spirit 2 L2
   m_EditorClassIdentifier: 
   TitleText: Zodrahin
-  MessageText: Welcome Stranger..!! You've been to alot. But your journey doen't
-    ends here.Its a very long road ahed.Beaware of Spikes.
+  MessageText: Welcome Stranger..!! You've been to alot. But your journey doesn't
+    ends here.Its a very long road ahead.Beware of Spikes.
   ButtonText: Ok

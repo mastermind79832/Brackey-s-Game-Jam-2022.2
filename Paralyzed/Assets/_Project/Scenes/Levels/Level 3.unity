@@ -19213,6 +19213,7 @@ GameObject:
   - component: {fileID: 1878315792}
   - component: {fileID: 1878315791}
   - component: {fileID: 1878315790}
+  - component: {fileID: 1878315793}
   m_Layer: 0
   m_Name: Win
   m_TagString: Untagged
@@ -19313,6 +19314,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878315793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878315789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949492afaabd81c4b9cb4e45f3a29ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1890164977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20707,7 +20720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340579265388579155, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_MaxHealth
-      value: 10
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4340579265388579155, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_BatteryFill

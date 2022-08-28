@@ -9,6 +9,7 @@ namespace Paralysed.GameManager
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private GameObject gameOverPanel;
         public static GameManager Instance { get; private set; }
 
         private void Awake()
@@ -23,7 +24,6 @@ namespace Paralysed.GameManager
             DontDestroyOnLoad(gameObject);
         }
 
-        [SerializeField] private GameObject gameOverPanel;
 
 
         public void CallGameOverPanel()

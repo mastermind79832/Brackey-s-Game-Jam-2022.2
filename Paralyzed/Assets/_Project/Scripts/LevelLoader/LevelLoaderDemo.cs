@@ -15,12 +15,20 @@ namespace Paralysed
             
             if (col.gameObject.CompareTag("Player"))
             {
-                SceneManager.LoadScene(currentlevel + 1);
                 if (currentlevel >= PlayerPrefs.GetInt("levelsUnlocked"))
                 {
                     PlayerPrefs.SetInt("levelsUnlocked", currentlevel );
                     Debug.Log("Completed");
                 }
+
+                if(currentlevel + 1 <= 4 )
+                {
+                    SceneManager.LoadScene(currentlevel + 1);
+                }else
+                {
+                    SceneManager.LoadScene(0);
+                }
+                
             }
         }
     }

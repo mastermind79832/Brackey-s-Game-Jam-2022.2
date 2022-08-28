@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TitleText: ' Divine'
   MessageText: Hey there..!! You Can't just go forward. You have to first turn off
-    the lever. Hop on the platform at right time and go and turn off the lever.
+    the lever. Hop on the platform at the right time and go and turn off the lever.
   ButtonText: Ok

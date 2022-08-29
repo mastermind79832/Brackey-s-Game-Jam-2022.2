@@ -11,7 +11,7 @@ namespace Paralysed.Scene
 
         public void Play()
 		{
-            GameManager.Instance.sceneSwtichController.SwitchMenuScene(MainMenuSceneType.LevelMenu);
+            GameManager.Instance.sceneSwtichController.SwitchMenuScene(MenuSceneType.LevelMenu);
 		}
 
 

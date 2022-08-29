@@ -8,7 +8,6 @@ namespace Paralysed.Scene
 {
     public class LevelLoaderDemo : MonoBehaviour
     { 
-        
         private void OnCollisionEnter2D(Collision2D col)
         { 
             int currentlevel = SceneManager.GetActiveScene().buildIndex;
@@ -24,7 +23,8 @@ namespace Paralysed.Scene
                 if(currentlevel + 1 <= 4 )
                 {
                     SceneManager.LoadScene(currentlevel + 1);
-                }else
+                }
+                else
                 {
                     SceneManager.LoadScene(0);
                 }

@@ -9,13 +9,13 @@ namespace Paralysed.GameOver
     {
         public void Reload()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Time.timeScale = 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void Quit()
         {
-            Application.Quit();
+			GameManager.Instance.sceneSwtichController.SwitchMenuScene(Scene.MenuSceneType.MainMenu);
         }
     }
 }

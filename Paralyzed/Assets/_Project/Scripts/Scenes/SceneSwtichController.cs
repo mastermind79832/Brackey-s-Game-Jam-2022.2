@@ -5,29 +5,19 @@ using UnityEngine.SceneManagement;
 
 namespace Paralysed.Scene
 {
-	public enum MainMenuSceneType
-	{
-		MainMenu = 0,
-		LevelMenu = 1
-	}
 
-    public class SceneSwtichController : MonoBehaviour
+	public class SceneSwtichController : MonoBehaviour
     {
-        [SerializeField] private SceneCollection m_MenuCollection;
-		[SerializeField] private SceneCollection m_LevelCollection;
+		[SerializeField] private LevelCollection m_LevelCollection;
 
-        public void SwitchMenuScene(MainMenuSceneType type)
+        public void SwitchMenuScene(MenuSceneType type)
 		{
-			LoadScene(m_MenuCollection,(int)type);
+			SceneManager.LoadScene((int)type);
 		}
 
 		public void StartLevel(int levelIndex)
 		{
-			LoadScene(m_LevelCollection, levelIndex);
-		}
-		private void LoadScene(SceneCollection collection ,int menuIndex)
-		{
-			SceneManager.LoadScene(collection.SceneNames[menuIndex]);
+			SceneManager.LoadScene(m_LevelCollection.levelDetails[levelIndex].levelSceneName);
 		}
     }
 }

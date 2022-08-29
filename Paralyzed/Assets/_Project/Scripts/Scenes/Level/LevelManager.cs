@@ -1,16 +1,17 @@
 using UnityEngine;
 using Button = UnityEngine.UI.Button;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 
 namespace Paralysed.Level
 {
     public class LevelManager : MonoBehaviour
     {
-         [Header("Level Loader")]
-         [SerializeField] private Button[] m_Button;
-         private int levelsUnlocked;
-    
+        [Header("Level Loader")]
+        [SerializeField] private Button[] m_Button;
+        private int levelsUnlocked;
+
         void Start()
         {
             //PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory
@@ -27,14 +28,11 @@ namespace Paralysed.Level
             }
             
             Debug.Log(m_Button.Length);
-
         }
 
         public void LoadLevel(int levelIndex)
         {
             SceneManager.LoadScene(levelIndex);
-        }
-
-        
+        }       
     }
 }

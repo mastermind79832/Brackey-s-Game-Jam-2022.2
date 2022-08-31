@@ -36,9 +36,10 @@ namespace Paralysed
             else
 			{
                 sceneController.SwitchMenuScene(MenuSceneType.MainMenu);
-                restartButton.SetActive(false);
 			}
 		}
+
+        public void RestartButtonActive(bool isActive) => restartButton.SetActive(isActive);
 
         public void ReplayLevel()
 		{

@@ -9,8 +9,11 @@ namespace Paralysed.Scene
 		[SerializeField] private LevelCollection m_LevelCollection;
 		[SerializeField] private LoadingScreen m_LoadingScreen;
 
-		public void SwitchMenuScene(MenuSceneType type) =>
+		public void SwitchMenuScene(MenuSceneType type)
+		{
+			GameManager.Instance.RestartButtonActive(false);
 			SceneManager.LoadScene((int)type);
+		}
 
 		public void StartLevel(int levelIndex)
 		{

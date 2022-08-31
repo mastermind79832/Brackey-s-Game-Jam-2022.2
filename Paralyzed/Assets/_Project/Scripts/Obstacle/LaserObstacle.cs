@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Paralysed.Core;
@@ -6,7 +5,7 @@ using Paralysed.Interactable;
 
 namespace Paralysed.Obstacle
 {
-    public class LaserObstacle : Obstacle, ISwitchConnectable
+	public class LaserObstacle : Obstacle, ISwitchConnectable
     {
 		[SerializeField] private EdgeCollider2D m_EdgeCollider;
         [SerializeField] private Transform m_StartPosition;

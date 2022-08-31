@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 using Paralysed.Core;
 
 namespace Paralysed.Character
@@ -9,6 +6,7 @@ namespace Paralysed.Character
     public class TurretController : MonoBehaviour
     {
         [SerializeField] private Bullet bulletPrefab;
+		[SerializeField] private TurretSoundManager soundManager;
 
 		[Header("Shooting properties")]
         [SerializeField] private float m_LaunchForce;
@@ -23,8 +21,6 @@ namespace Paralysed.Character
 
         private Vector2 m_Direction;
 		private ObjectPool<Bullet> m_BulletPool;
-
-		[SerializeField] private AudioClip a_ShootSound;
 
         private void Start()
 		{
@@ -46,7 +42,7 @@ namespace Paralysed.Character
             if (Input.GetMouseButtonDown(0))
             {
                 Shoot();
-                SoundManager.Instance.Play(a_ShootSound);
+				soundManager.PlayFireSound();
             }
         }
 
@@ -78,8 +74,9 @@ namespace Paralysed.Character
 			bullet.transform.position = m_ShotPoint.position;
 			bullet.gameObject.SetActive(true);
 			bullet.AddVelocity(transform.up * m_LaunchForce);
+
 			if(bullet.OnBulletDisable == null)
-			bullet.OnBulletDisable = m_BulletPool.PutItem;
+				bullet.OnBulletDisable = m_BulletPool.PutItem;
         }
 
         Vector2 PointPosition(float t)
@@ -88,9 +85,6 @@ namespace Paralysed.Character
 
             Vector2 position = (Vector2)m_ShotPoint.position + (m_Direction.normalized * m_LaunchForce * t) + 0.5f * Physics2D.gravity * (t * t);
             return position;
-        }
-
-		
-		
+        }	
     }
 }

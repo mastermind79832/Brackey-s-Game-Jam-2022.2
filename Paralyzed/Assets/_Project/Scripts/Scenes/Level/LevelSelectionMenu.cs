@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Paralysed.Scene
 {
     public class LevelSelectionMenu : MonoBehaviour
     {
-        [SerializeField] private LevelCollection m_levelCollection;
+        [SerializeField] private LevelCollection m_LevelCollection;
         [SerializeField] private LevelButtonController[] m_LevelButtons;
 		
 		private int levelsUnlocked;
@@ -15,14 +12,14 @@ namespace Paralysed.Scene
 		private void Start()
 		{
 			SetLevelButtons();
+			SetButtonActive(m_LevelButtons.Length, false);
+			SetUnlockedButton();
 		}
 
 		private void SetLevelButtons()
 		{
 			for (int i = 0; i < m_LevelButtons.Length; i++)
-			{
-				m_LevelButtons[i].SetLevelDetails(m_levelCollection.levelDetails[i], i);
-			}
+				m_LevelButtons[i].SetLevelDetails(m_LevelCollection.levelDetails[i], i);
 
 			SetUnlockedButton();
 		}
@@ -30,17 +27,14 @@ namespace Paralysed.Scene
 		private void SetUnlockedButton()
 		{
 			//PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory
-			levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+			levelsUnlocked = GameManager.Instance.LevelManager.GetUnlockedLevelCount();
+			SetButtonActive(levelsUnlocked, true);
+		}
 
-			for (int i = 0; i < m_LevelButtons.Length; i++)
-			{
-				m_LevelButtons[i].SetActive(false);
-			}
-
-			for (int i = 0; i < levelsUnlocked; i++)
-			{
-				m_LevelButtons[i].SetActive(true);
-			}
+		private void SetButtonActive(int count, bool isActive)
+		{
+			for (int i = 0; i < count; i++)
+				m_LevelButtons[i].SetActive(isActive);
 		}
 	}
 }

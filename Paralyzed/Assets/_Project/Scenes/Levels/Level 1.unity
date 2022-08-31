@@ -4059,13 +4059,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Message Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 969345950199465326, guid: 87e1c72dd6f7ed44cbda76131dbabf90, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 969345950199465326, guid: 87e1c72dd6f7ed44cbda76131dbabf90, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 576
+    - target: {fileID: 969345951295384891, guid: 87e1c72dd6f7ed44cbda76131dbabf90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e1c72dd6f7ed44cbda76131dbabf90, type: 3}
@@ -4420,7 +4416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516860602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.055005, y: 2.7999992, z: -10}
+  m_LocalPosition: {x: 9.794987, y: 2.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6829,7 +6825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757463813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.055005, y: 2.7999992, z: -10}
+  m_LocalPosition: {x: 9.794987, y: 2.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13788,11 +13784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2152047573459520213, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 319.6
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 2152047573459520213, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.5
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 2152047573459520213, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13844,11 +13840,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8123095188029627236, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -324.4
+      value: -3.41
       objectReference: {fileID: 0}
     - target: {fileID: 8123095188029627236, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8123095188029627237, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: a_ShootSound
@@ -13856,11 +13852,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 951dd9450ec6a554e946276a364071b9, type: 3}
     - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -319.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8123095188403503812, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.3
+      value: 1.59
       objectReference: {fileID: 0}
     - target: {fileID: 8123095188403503814, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_BatteryController

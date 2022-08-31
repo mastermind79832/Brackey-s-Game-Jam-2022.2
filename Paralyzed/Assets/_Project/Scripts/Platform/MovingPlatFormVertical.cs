@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Paralysed._Project.Scripts
+namespace Paralysed.Platform
 {
     public class MovingPlatFormVertical : MonoBehaviour
     {
@@ -43,7 +43,6 @@ namespace Paralysed._Project.Scripts
 
         private bool IsPointReached() => transform.position == m_WayPoints[m_CurrentIndex].position;
 
-        //
         private void OnCollisionEnter2D(Collision2D collision)
         {
             collision.transform.parent = transform;

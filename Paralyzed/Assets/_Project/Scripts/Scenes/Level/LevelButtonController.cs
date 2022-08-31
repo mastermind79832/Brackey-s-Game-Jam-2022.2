@@ -38,7 +38,7 @@ namespace Paralysed.Scene
 
         private void OnButtonPressed()
 		{
-            GameManager.Instance.sceneSwtichController.StartLevel(m_levelIndex);
+            GameManager.Instance.StartLevel(m_levelIndex);
 		}
     }
 }

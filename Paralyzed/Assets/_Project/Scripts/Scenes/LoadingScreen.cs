@@ -9,30 +9,28 @@ namespace Paralysed.Scene
 {
     public class LoadingScreen : MonoBehaviour
     {
-        public GameObject LoadPanel;
-        public Slider slider;
+        [SerializeField] private Slider slider;
         
         public void Start()
         {
-            LoadPanel.SetActive(false);
+            gameObject.SetActive(false);
         }
 
-        public void Loadlevel(int sceneIndex)
+        public void Loadlevel(string sceneName)
         {
-            StartCoroutine(LoadAsynchonously(sceneIndex));
+            StartCoroutine(LoadAsynchonously(sceneName));
         }
 
-        IEnumerator LoadAsynchonously(int sceneIndex)
+        IEnumerator LoadAsynchonously(string sceneName)
         {
-            LoadPanel.SetActive(true);
-            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-            LoadPanel.SetActive(true);
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
             while (!operation.isDone)
             {
                 float progress = Mathf.Clamp01(operation.progress / .9f);
                 slider.value = progress;
                 yield return null;
             }
+            gameObject.SetActive(false);
         }
     }
 }

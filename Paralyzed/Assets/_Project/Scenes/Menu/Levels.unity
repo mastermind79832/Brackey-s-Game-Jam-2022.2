@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d663a04912ff24ba673daed13be8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_levelCollection: {fileID: 11400000, guid: 2f4947e1415e1704c860467101752b3a, type: 2}
+  m_LevelCollection: {fileID: 11400000, guid: 2f4947e1415e1704c860467101752b3a, type: 2}
   m_LevelButtons:
   - {fileID: 7406710772556364721}
   - {fileID: 1115621723}

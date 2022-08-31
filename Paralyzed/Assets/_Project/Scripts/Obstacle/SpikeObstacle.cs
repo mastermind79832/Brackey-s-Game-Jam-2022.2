@@ -1,11 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Paralysed.Obstacle
 {
-    public class SpikeObstacle : Obstacle
+	public class SpikeObstacle : Obstacle
     {
         [Tooltip("will be stationary if turned off")]
         [SerializeField] private bool b_IsRectractable;

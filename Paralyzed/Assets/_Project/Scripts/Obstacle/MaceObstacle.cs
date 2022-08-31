@@ -1,11 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Paralysed.Obstacle
 {
-    public class MaceObstacle : Obstacle
+	public class MaceObstacle : Obstacle
     {
 		[Tooltip("This object will move from one way point to the other and then cycle back again")]
         [SerializeField] private Transform[] m_WayPoints;

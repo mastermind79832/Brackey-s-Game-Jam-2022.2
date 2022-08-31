@@ -1,12 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Paralysed.Core;
 
 namespace Paralysed.Obstacle
 {
-    public abstract class Obstacle : MonoBehaviour
+	public abstract class Obstacle : MonoBehaviour
     {
 		[Tooltip("Damage applied to Idamageable")]
 		[SerializeField] private float m_Damage;

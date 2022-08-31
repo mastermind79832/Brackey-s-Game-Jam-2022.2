@@ -1,38 +1,28 @@
 using UnityEngine;
-using Button = UnityEngine.UI.Button;
 using UnityEngine.SceneManagement;
-using UnityEngine.Events;
 
-
-namespace Paralysed.Level
+namespace Paralysed.Scene
 {
     public class LevelManager : MonoBehaviour
     {
-        [Header("Level Loader")]
-        [SerializeField] private Button[] m_Button;
-        private int levelsUnlocked;
+        public int CurrentLevel { get; private set; }
+        public void UnlockNextLevel()
+		{
+            CurrentLevel++;
 
-        void Start()
-        {
-            //PlayerPrefs.DeleteKey("levelsUnlocked");  // to clear memory
-            levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
-
-            for (int i = 0; i < m_Button.Length; i++)
-            {
-                m_Button[i].interactable = false;
-            }
-            
-            for (int i = 0; i < levelsUnlocked; i++)
-            {
-                m_Button[i].interactable = true;
-            }
-            
-            Debug.Log(m_Button.Length);
+            if (CurrentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
+                PlayerPrefs.SetInt("levelsUnlocked", CurrentLevel);
         }
 
-        public void LoadLevel(int levelIndex)
-        {
-            SceneManager.LoadScene(levelIndex);
-        }       
-    }
+		public void SetCurrentLevel(int levelIndex)
+		{
+			CurrentLevel = levelIndex + 1;
+		}
+
+        public int GetUnlockedLevelCount()
+		{
+            return PlayerPrefs.GetInt("levelsUnlocked", 1);
+
+        }
+	}
 }

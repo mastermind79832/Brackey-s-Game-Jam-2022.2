@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Paralysed.Core;
-using System;
 
 namespace Paralysed.Interactable
 {

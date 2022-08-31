@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Paralysed.Core;
 
@@ -27,8 +24,6 @@ namespace Paralysed.Character
         [SerializeField] private LayerMask m_WhatIsGround;
 
 		private Vector3 m_RespawnPoint;
-		
-		[SerializeField] private AudioClip A_JumpClip;
 
 		private void Start()
 		{
@@ -83,8 +78,6 @@ namespace Paralysed.Character
 		public void Respawn()
 		{
 			transform.position = m_RespawnPoint;
-		}
-
-		
+		}	
 	}
 }

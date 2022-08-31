@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Levels
   m_EditorClassIdentifier: 
   levelDetails:
-  - levelSceneName: Level1
+  - levelSceneName: Level 1
     levelTitle: Chapter - 1
     bgImage: {fileID: 21300000, guid: acc1115c6efee3a4cb2190f932369368, type: 3}
-  - levelSceneName: Level2
+  - levelSceneName: Level 2
     levelTitle: Chapter - 2
     bgImage: {fileID: 21300000, guid: ee84fb333b588fb42988d5387c7d919b, type: 3}
-  - levelSceneName: Level3
-    levelTitle: CHapter - 3
+  - levelSceneName: Level 3
+    levelTitle: Chapter - 3
     bgImage: {fileID: 21300000, guid: fa15136ef14055d479658a0195922888, type: 3}

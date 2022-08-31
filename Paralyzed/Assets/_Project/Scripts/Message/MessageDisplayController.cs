@@ -1,12 +1,11 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Paralysed.Core;
 
 namespace Paralysed.Message
 {
-    public class MessageDisplayController : MonoSingletonGeneric<MessageDisplayController>
+	public class MessageDisplayController : MonoSingletonGeneric<MessageDisplayController>
     {
         [SerializeField] private GameObject m_MessagePanel;
         [SerializeField] private TextMeshProUGUI m_TitleText;
@@ -17,11 +16,11 @@ namespace Paralysed.Message
 
         public void OnButtonPressed()
 		{
-            close();
+            Close();
             m_OnButtonPressed?.Invoke();
 		}
 
-		private void close()
+		private void Close()
 		{
 			m_MessagePanel.SetActive(false);
 			Time.timeScale = 1;

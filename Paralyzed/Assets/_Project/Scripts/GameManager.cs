@@ -1,17 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using Paralysed.Core;
+using Paralysed.Scene;
 
 namespace Paralysed
 {
     public class GameManager : MonoSingletonGeneric<GameManager>
     {
-        [SerializeField] private GameObject gameOverPanel;
-        [SerializeField] private Scene.SceneSwtichController sceneController;
-        public Scene.SceneSwtichController sceneSwtichController { get { return sceneController; } }    
+        [SerializeField] private GameOverController gameOverController;
+        [SerializeField] private SceneSwtichController sceneController;
+		[SerializeField] private LevelManager levelManager;
+
+        public SceneSwtichController SceneController { get { return sceneController; } }
+        public LevelManager LevelManager { get { return levelManager; } }
 
 		protected override void Awake()
 		{
@@ -19,10 +19,32 @@ namespace Paralysed
             DontDestroyOnLoad(gameObject);
 		}
 
-		public void CallGameOverPanel()
+		public void GameOver()
         {
-            Instantiate(gameOverPanel, Vector3.zero, quaternion.identity);
             Time.timeScale = 0;
+            gameOverController.gameObject.SetActive(true);
         }
+
+        public void PlayNextLevel()
+		{
+            if (LevelManager.CurrentLevel + 1 <= sceneController.GetTotalScene())
+            {
+                levelManager.UnlockNextLevel();
+                sceneController.StartLevel(levelManager.CurrentLevel - 1);
+            }
+            else
+                sceneController.SwitchMenuScene(MenuSceneType.MainMenu);
+		}
+
+        public void ReplayLevel()
+		{
+            sceneController.StartLevel(levelManager.CurrentLevel - 1);
+        }
+
+        public void StartLevel(int levelIndex)
+		{
+            levelManager.SetCurrentLevel(levelIndex);
+            sceneController.StartLevel(levelIndex);
+		}
     }
 }

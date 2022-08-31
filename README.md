@@ -3,10 +3,10 @@ This is the repo for Brackey's game jam 2022.2.
 <br>Avoid the obstacles. Launch yourself to freedom. Don't worry, The spirits will guide you.
 
 # Team members
-- Gowrav
-- Aditya
-- Manjunath MP
-- Amit
+- Gowrav - https://github.com/ambrollins
+- Aditya - https://github.com/mastermind79832
+- Manjunath MP - https://github.com/mppavan05
+- Amit - https://github.com/Amit8844
 
 # Controls
 - Left mouse Button to shoot

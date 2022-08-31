@@ -9,6 +9,7 @@ namespace Paralysed
         [SerializeField] private GameOverController gameOverController;
         [SerializeField] private SceneSwtichController sceneController;
 		[SerializeField] private LevelManager levelManager;
+        [SerializeField] private GameObject restartButton;
 
         public SceneSwtichController SceneController { get { return sceneController; } }
         public LevelManager LevelManager { get { return levelManager; } }
@@ -33,7 +34,10 @@ namespace Paralysed
                 sceneController.StartLevel(levelManager.CurrentLevel - 1);
             }
             else
+			{
                 sceneController.SwitchMenuScene(MenuSceneType.MainMenu);
+                restartButton.SetActive(false);
+			}
 		}
 
         public void ReplayLevel()
@@ -45,6 +49,7 @@ namespace Paralysed
 		{
             levelManager.SetCurrentLevel(levelIndex);
             sceneController.StartLevel(levelIndex);
+            restartButton.SetActive(true);
 		}
     }
 }

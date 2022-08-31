@@ -13770,6 +13770,10 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 34563736747215587, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 34563737614884516, guid: 7c084c785de3d0848a0ff0b9e77f02de, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
